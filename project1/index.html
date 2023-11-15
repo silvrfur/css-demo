@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Cat Shop</title>
+</head>
+<!-- how to link file -->
+<link rel="stylesheet" href="css/style.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:wght@100&family=Gloock&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Genos:wght@100&family=Gloock&family=Mynerve&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<style>
+    /* css reset  */
+    body{
+        margin:0px;
+        padding:0px;
+        color:white;
+        background: url('img/background.jpg');
+        font-family: 'Lato', sans-serif;
+        
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 12px;
+        left: 34px;
+        line-height: 19px;
+        font-family: 'Pacifico', cursive;
+        /* font-family: 'Mynerve', cursive; */
+        font-size: 28px;
+        text-align: center;
+        color: rgb(81, 133, 159);
+    }
+    .left img{
+        width: 37px;
+    }
+    .mid{
+        width: 35%;
+        margin: 12px auto; /*top, left*/
+
+        /* border: 2px solid green; */
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 19px;
+        /* border: 2px solid yellow; */
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 14px;
+    }
+    .navbar li a{    /*notice how selection is done*/
+        color: white;
+        font-weight: bold;
+        text-decoration: none; /*remove decoration given by list*/
+        padding: 34px 23px;
+    } 
+    /* notice selection format as well */
+    .navbar li a:hover, .navbar li a.active{ /*hover krne pe ya active page hone pe underline*/
+        text-decoration: underline;
+        color: rgb(81, 133, 159);
+    }
+    .btn img{
+        width: 21px;
+    }
+    .btn{
+        border-radius: 100px;
+    }
+    .btn:hover{
+        background-color: rgb(81, 133, 159);
+    }
+
+    .container{
+        border: 2px solid white;
+        border-radius: 45px;
+        width: 30%;
+        padding: 25px;
+        margin-left: 78px;
+        margin-top: 108px;
+    }
+    .container h1{
+        display: inline-block;
+        /* margin: auto; */
+        text-align: center;
+    }
+    #meow{
+        font-family: 'Pacifico', cursive;
+        display: inline-block;
+        /* font-family: 'Mynerve', cursive; */
+    }
+    .form-group{
+        margin-top: 28px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 308px;
+        height: 14px;
+        border: 2px solid black;
+        border-radius: 17px;
+        padding: 8px;
+        margin: 8px auto;
+    }
+    .container button{
+        text-align: center;
+        display: block;
+        width: 103px;
+        height: 44px;
+        border: 2px solid black;
+        border-radius: 17px;
+        padding: 8px;
+        margin: auto;
+        margin-top: 29px;
+        background-color: rgb(81, 133, 159);
+        
+    }
+    .container button:hover{
+        background-color: rgb(72, 70, 70);
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <br>
+            meow 
+        </div>
+
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for call to action buttons -->
+        <div class="right">
+            <button class="btn"><img src="img/account2.png" alt=""></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Shop from <div id="meow">meow</div> cat shop!</h1>
+        <form action="noaction.php"> 
+            <!-- no action means no storage in backend -->
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your name">
+                <input type="text" name="" id="" placeholder="Enter your phone number">
+                <input type="text" name="" id="" placeholder="Enter your email">
+                <input type="text" name="" id="" placeholder="Create a password">
+                <button class="btn_form">Sign up</button>
+                <!-- style button later -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>

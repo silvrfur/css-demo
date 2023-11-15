@@ -1,0 +1,35 @@
+<!-- web save fonts(come with operating system)
+    search on google to know yours
+web fonts(if you dont have it, you have to import it)
+    use google fonts for importing
+font stacking seperated by commas, agar ye na ho toh yeh, agar wo bhi na ho toh yeh.. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Gloock&display=swap" rel="stylesheet"> <!--linked font from google fonts-->
+    <style>
+        p{
+            /* the below is font stacking */
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+            font-family: 'Gloock', serif; /*web fonts*/
+            
+            /* unit of font size is px, which is 1/96 of inch  */
+            font-size: 50px; 
+            line-height: 8.3em; /*upar and niche wali text se spacing*/
+        }
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    <p>Let's play with fonts. <span>Welcome on-boad</span></p>
+</body>
+</html>

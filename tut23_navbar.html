@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        .navbar{
+            background-color: rgb(59, 52, 52);
+        }
+        .navbar ul{
+            overflow: auto; /* to keep the flow after float inside parent*/
+            padding: 17px;
+        }
+        .navbar li{
+            float: left; /*flows out of parent*/
+            list-style: none; /*to remove bullets in list*/
+        }
+        .navbar li a{ /*taget specific part of the class*/
+            padding: 16px;
+            text-decoration:none;
+            color: white;
+        }
+        #search{
+            float:right;
+            border-color:black ;
+            border-radius: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div>
+                    <input type="text" name="seach" id="search" placeholder="fluffy enigma"> 
+                    <!-- take input we learnt in css, placeholder btw  -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

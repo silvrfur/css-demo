@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* universal selector */
+        *{
+            box-sizing: border-box;
+            /* concept of box-sizing: @15:06
+            increase padding, width changes 
+            thus not to do so,
+            box-sizing: border-box; */
+            
+            /* default initialization, can be overwritten later  */
+            margin: 0px;
+            padding:0px;
+        }
+        .container{
+            background-color: rgb(193, 244, 160);
+            border: 3px solid rgb(241, 186, 186);
+            padding: 20px;
+            /* padding-left: ;
+            padding-top: ;
+            we can set padding in format top, right, bottom and left 
+            padding=23px 56px 6px 78px;
+            to give in format x(top/bottom) y(left/right)
+            padding:34px 78px; */
+            margin: 34px;
+
+            /* concept of box-sizing: @15:06
+            increase padding, width changes 
+            thus not to do so,
+            box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi iusto cum, ducimus ex libero ad necessitatibus sit voluptatibus omnis eos odit itaque eius vel dicta blanditiis numquam molestias asperiores similique.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi iusto cum, ducimus ex libero ad necessitatibus sit voluptatibus omnis eos odit itaque eius vel dicta blanditiis numquam molestias asperiores similique.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi iusto cum, ducimus ex libero ad necessitatibus sit voluptatibus omnis eos odit itaque eius vel dicta blanditiis numquam molestias asperiores similique.</p>
+    </div>
+</body>
+</html>

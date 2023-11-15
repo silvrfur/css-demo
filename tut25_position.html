@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postioning in css</title>
+    <style>
+        /* postion: static(default), absolute, relative,fixed, sticky */
+        .container{
+            border: 2px solid greenyellow;
+            background-color: aquamarine;
+            height: 1248px;
+        }
+        .box{
+            display: inline-block;
+            width:150px;
+            border: 2px solid coral;
+            padding: 5px;
+            margin: 5px;
+        }
+        #box3{
+            /* postion relative is wrt to itself
+            postion absolute is wrt to the parent */
+            /* position: relative; */
+
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+            /* position fixed keep the box on the same specified place while scrolling */
+            position: fixed;
+            right: 4px; 
+            /* position from right is 4px */
+        }
+        .container2{
+            border: 2px solid purple;
+            background-color: plum;
+            height: 3444px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- div.box#id*4, 4 boxes will be made -->
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <div class="container2">
+        Hello World
+    </div>
+</body>
+</html>

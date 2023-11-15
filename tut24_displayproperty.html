@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        header{
+            
+            border: 2px solid rebeccapurple;
+            
+            padding: 10px 20px;
+            margin: auto;
+            width: 15%; 
+            /* width can be set in block not inline element
+            margin auto wont be applicable to block element since it meant to take up all space, thus set width */
+        }
+        img{
+            display: block; /*make the display of img block to set margin and stuff*/
+            margin: auto;
+            height: 38px;
+            border-color: black;
+            border-radius: 552px;
+        }
+        h3{
+            /* margin-inline-start: 29%; */
+            text-align: center;
+        }
+        .box{
+            border: 2px solid purple;
+            background-color: plum;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block; /*andar ke elements block rahenge, but oveall inline*/
+            width: 32%;
+            box-sizing: border-box; /*makes the width, including margin and border*/
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_1240/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.webp" alt="">
+        <!-- open img in a new tab and then copy link  -->
+        <!-- inline vs block element
+        inline jitna jagah usko chaiye utna hi learnt
+        block element pura space leta h -->
+        <h3>I love cats</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quasi ullam, alias at itaque unde quo eum deserunt magnam. Est enim et, inventore aperiam obcaecati voluptatem quae labore quos mollitia.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quasi ullam, alias at itaque unde quo eum deserunt magnam. Est enim et, inventore aperiam obcaecati voluptatem quae labore quos mollitia.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quasi ullam, alias at itaque unde quo eum deserunt magnam. Est enim et, inventore aperiam obcaecati voluptatem quae labore quos mollitia.</p>
+        </div>
+    </div>
+</body>
+</html>

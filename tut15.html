@@ -1,0 +1,46 @@
+<!-- id is unique, class is multiple  -->
+<!-- 1 class in multiple elements, mutiple elements in one class\
+but just one id in one element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* element selector  */
+        p{
+            color:lime;
+        }
+        /* id selector with # symbol  */
+        #firstPara{
+            color:purple;
+        }
+
+        /* class selector  */
+        .redElement{
+            color:red
+        }
+        .bgBlue{
+            background-color: blue;
+        }
+
+        /* grouping selector  */
+        span,footer{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is para 1.</p>
+    <p class="redElement bgBlue">This is para 2, inside id cat.</p>
+    <div>
+        <p>This is para 3, inside div.</p>
+        <span>This is span.</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>

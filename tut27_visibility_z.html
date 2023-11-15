@@ -1,0 +1,49 @@
+<!-- z index doesn't work for static  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibiliy and Z index</title>
+    <style>
+        .box{
+            width: 178px;
+            height: 78px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: red;
+            position: relative;
+            top: 45px;
+            z-index: 36;
+        }
+        #box2{
+            /* none removes, no space is reserved */
+            /* display: none; */
+            /* hidden remove, space is reserved */
+            /* visibility: hidden; */
+            background-color: yellow;
+            position: relative;
+            top: 20px;
+            /* yellow appears on top of red by the above code */
+            z-index: 35;
+            /* z index has no unit  */
+            /* make z index of box1 greater than box 2 for box 2 to appear on the top  */
+            
+        }
+        #box3{
+            background-color: green;
+        }
+        #box4{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 to get box1,2,3..as id -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

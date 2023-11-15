@@ -1,0 +1,72 @@
+<!-- full notes in notions this is just for playground  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* note  */
+            display: flex;
+
+            /* properties of flex containers  */
+
+            
+
+            flex-wrap: wrap; /*gets wrapped according to responsiveness*/
+            
+            align-items: stretch; /*height of boxes stretches when responsiveness is changed*/
+
+
+        }
+        .item{
+            /* properties of flex items  */
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 5px;
+        }
+        #item1{
+            /* last me wo jayega jiska order jyda hoga  */
+            order: 40;
+            /* as the width of screen increases when responsivness is changed, box 1 takes greater space( takes space in 3:1 ratio) */
+            flex-grow: 2;
+        }
+        #item2{
+            flex-grow: 3;
+            /* as the width of screen decreases when responsivness is changed, box 2 takes least space( takes space in 3:1 ratio) */
+            /* opposite of flex grow  */
+            flex-shrink: 3;
+
+            /* width and heigh of class .item is 200px but now flex or height is 300px */
+            /* when flex-direction is set to row(flex-direction is set in container btw),flex-basis will control width */
+            /* when flex-direction is set to column flex-basis will control height */
+            flex-basis: 300px;
+
+        }
+        #item3{
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox in CSS</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+</html>
