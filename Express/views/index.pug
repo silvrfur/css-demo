@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Raw html in pug</title> -->
+    <title>#{title}</title>
+    <!-- include static style file in pug -->
+    style
+      include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p>
+        | #{content} 
+        | <!-- This is plain html in pug. -->
+        | <!-- use pipe symbol to run it as plain text ref documentation of pug -->
+        </p>
+    </div>
+    
+</body>
+</html>

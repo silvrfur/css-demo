@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">This is container.</div>
+    <script>
+        //primitive
+        let myVar=23;
+        //others are null, true, undefined
+
+        //objects- key value pair
+        let employee={
+            name:"Shruti",
+            salary:'50k',
+            channel:"Joma Tech",
+            "channel 2":"Fireship",
+        };
+        console.log(employee.name);
+        console.log(employee["channel 2"]);
+
+        //arrays
+        let names=["Jack","Colby",3,2,undefined];
+        console.log(names);
+        console.log(names.length);
+        names=names.sort();
+        names.push("element to be added in array");
+        
+        //object of array
+        let names1=new Array("Jack","Colby",3);
+
+        let names3=new Array(23); //an array of size 23
+    </script>
+</body>
+</html>

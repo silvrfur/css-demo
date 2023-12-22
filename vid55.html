@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops.
+    </div>
+    <script>
+        let arr=["1989","midnights","folklore","evermore"];
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        //for each loop
+        arr.forEach(element => {
+            console.log(element);
+        });
+        //for of loop
+        for (elemnt of arr) {
+            console.log(`The album is ${element}`);
+        }
+        let employee={
+            name:"Shruti",
+            degree:"CSE",
+        }
+        //for in loop to iterate through key val pair
+        for(key in employee){
+            console.log(`The key is ${key}, the value is ${employee[key]}`);
+        }
+
+        //while loop
+        let i=0;
+        while(i<4){
+            console.log(i);
+            i++;
+        }
+
+        //do while loop
+        let j=0;
+        do{
+            console.log(j);
+            j++;
+        }while(j<4);
+    </script>
+</body>
+</html>

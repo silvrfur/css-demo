@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        //getElementById
+        let main=document.getElementById('main');
+        console.log(main);
+
+        //innerHTML
+        console.log(nav.innerHTML);//to print the elements of nav in string format
+        nav.innerHTML="<li>Dynamic element </li>";//to change the val of innerElement
+
+        // getElementsByClassName
+        let containers=document.getElementsByClassName('container');
+        console.log(containers);
+
+        //css query selector
+        let sel=document.querySelector('.container');
+        let sel2=document.querySelector('#nav>li');//returns only fisrt list
+        let sel3=document.querySelectorAll('#nav>li');//returns all li
+        console.log('Selector returns, '+sel);
+    </script>
+</body>
+</html>

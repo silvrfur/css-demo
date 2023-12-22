@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        Arrow Functions
+    </div>
+    <script>
+        //arrow function shortcut
+        greet= ()=>{
+            console.log('hello world');
+        }
+        greet();
+        
+        //no return statement needed
+        let greet2= ()=>console.log('hello world');
+    
+        //direcly got from vs code syntax
+        setTimeout(() => {
+            console.log("inside setTimeout");
+        }, 2000);
+
+        let sum1=(a,b)=>{
+            return a+b;
+        };
+
+        let sum2=(a,b)=>a+b;
+
+        let half=a=> a/2; //only when one argument is there, no bracket required
+
+        //lexical this, arrow function this can go to global variable if local variable not found
+        let obj1={
+            greeting:"Good Morning",
+            names:["Jake","Emma","Rose"],
+            speak(){
+                this.names.forEach(element => {
+                    console.log(this.greeting+element);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

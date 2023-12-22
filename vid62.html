@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">This is a container</div>
+    <script>
+        let jsonOBJ={
+            name:"Shruti",
+            roll: "32",
+            deg: "cse",
+        }
+        console.log(jsonOBJ);
+
+        //convert the obj to string
+        let myJsonStr=JSON.stringify(jsonOBJ);
+        console.log(myJsonStr);
+
+        //since its stirng now, can perform all string functions
+        myJsonStr=myJsonStr.replace("Shruti","Yiera");
+
+        //conver string back to object
+        newJsonObj=JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+    </script>
+</body>
+</html>

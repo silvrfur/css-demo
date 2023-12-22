@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String fucntions</title>
+</head>
+<body>
+
+    <script>
+        var str="This string";
+        var position=str.indexOf('is'); //ans=2
+        var lastpos=str.lastIndexOf('is');
+        var substr=str.slice(1,5);//can take negative values too
+        var substr1=str.substring(1,5);//can only take positive values
+        var substr2=str.substr(1,7);//till lenght
+        var replaced=str.replace("string","word");
+        str.toUpperCase();
+        str.toLowerCase();
+        var newstr=str.concat("NEW STRING");
+        var strtrim=str.trim();//remove leading and trailing whitespaces
+        var char=str.charAt(2);//extract character
+        var char2=str.charCodeAt(2)//utf character code of character at that index
+        var char3=str[2];
+    </script>
+</body>
+</html>

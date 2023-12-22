@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and GetTimeOut</title>
+</head>
+<body>
+    <div class="container">Time now is <span id="time"></span></div>
+    <script>
+        function greet(msg){
+            console.log("Hello World!" +msg);
+        }
+
+        //setTimeOut-->runs the function after given time interval
+        setTimeout(greet,5000," Enjoy learning JS");//not greet(), will appear after 5sec
+        timeOut= setTimeout(greet,5000," Enjoy learning JS");//returns the unique id of this set timeout
+        console.log(timeOut);
+
+        //clearTimeout
+        clearTimeout(timeOut); //to clear the setTimeout function
+
+        //setInterval
+        setInterval(greet,1000); //greet after each second
+        //same is clearInterval
+
+        //mini project to display time
+        function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

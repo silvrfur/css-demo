@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        //var,let,const
+        var string1="This is string";
+        var strign1="Yo"; //can be redeclared
+
+        let a='u'; //global a
+        // let a='r';//throws error when redeclared
+        {
+            let a='r'; //since scope is different, can be redeclared
+        }
+
+        const b="This cannot be changed"; //can't be changed
+        // b="i want to change";//throws error
+
+
+        //if-else
+        let age=34;
+        if(age>=18){
+            console.log("You can drive");
+        }
+        else{
+            console.log("You can't drive");
+        }
+
+        
+        //switch
+        const cup=41;
+        switch (cups) {
+            case 40:
+                console.log("val of cup is 40");
+                break;
+            case 41:
+                console.log("val of cups is 41");
+                break;
+        
+            default:
+                console.log("Wrong entry");
+                break;
+        }
+    </script>
+</body>
+</html>
