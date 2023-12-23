@@ -18,12 +18,23 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>This is heading</h1>
-        <p>
-        | #{content} 
-        | <!-- This is plain html in pug. -->
-        | <!-- use pipe symbol to run it as plain text ref documentation of pug -->
-        </p>
+        <h2>Get the gym membership for 50$- Fill the form now!</h2>
+        <!-- <p> -->
+        <!-- | #{content}  -->
+        <!-- | This is plain html in pug. -->
+        <!-- | use pipe symbol to run it as plain text ref documentation of pug -->
+        <!-- </p> -->
+        
+
+        <form action="/" method="post" id="Contact"> <!--action is where form data should be submitted-->
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your sex">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter you address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+
     </div>
     
 </body>

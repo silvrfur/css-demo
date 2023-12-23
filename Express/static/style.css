@@ -4,9 +4,21 @@
     margin:0px;
     padding:0px;
 }
+body::before{
+    content: "";
+    height: 622px;
+    width: 1263px;
+    /* height: 100%;
+    width: 100%; */
+    z-index: -1;
+    top: 0px;
+    opacity: 75%;
+    position: absolute;
+    background: url('/static/risen-wang-20jX9b35r_M-unsplash\ \(1\).jpg') no-repeat center center;
+}
 nav{
     background-color: rgb(176, 173, 173);
-    padding:12px 12px;
+    padding:12px 508px;
 
 }
 ul{
@@ -24,7 +36,30 @@ a{
 }
 .container{
     margin: 12px auto;
-    background-color: bisque;
+    /* background-color: bisque; */
     max-width: 70%;
     text-align: center;
+}
+
+input,textarea{
+    display: block;
+    padding: 3px;
+    margin: 15px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 4px auto;
+    display: block;
+    padding: 5px 12px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
 }
