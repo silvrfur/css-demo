@@ -1,0 +1,45 @@
+extends base.pug 
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection 
+        | Welcome to AUXE Dance Academy 
+        div.small
+          | "Dance to the Rhythm of Elegance"
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+          h3 Global Dance Celebration
+          div.card-box 
+            div.card-img 
+              img(src="/static/img1.png")
+            div.card-content 
+              p Showcasing the beauty and diversity of dance forms worldwide
+        div.card 
+          h3 Empower and Inspire
+          div.card-box 
+            div.card-img 
+              img(src="/static/img22.png")
+            div.card-content 
+              p Comprehensive platform for dancers, from beginners to professionals
+        div.card 
+          h3 Preserving Dance Artistry
+          div.card-box 
+            div.card-img 
+              img(src="/static/img3.png")
+            div.card-content 
+              p Documenting and archiving the history of various dance styles
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+          img(src="static/sponsors1.jpg", alt="Sponsor Image", class="spImage")
+          img(src="static/sponsors2.png", alt="Sponsor Image", class="spImage")
+          img(src="static/sponsors3.jpeg", alt="Sponsor Image", class="spImage")
+          img(src="static/sponsors44.png", alt="Sponsor Image", class="spImage")
+    
